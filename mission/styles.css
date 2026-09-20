@@ -1,0 +1,47 @@
+body {
+    width: 30%;
+    margin-left: 525px;
+}
+
+h1, h2, img {
+    text-align: center;
+}
+
+ol {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+li {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+}
+
+i {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 30%;
+    margin-left: 180px;
+    padding-top: 50px;
+}
+
+h2 {
+    color: royalblue;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+h1 {
+    padding-top: 40px;
+}
