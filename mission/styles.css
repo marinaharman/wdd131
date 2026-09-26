@@ -1,6 +1,6 @@
 body {
-    width: 30%;
-    margin-left: 525px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 h1, h2, img {
@@ -26,8 +26,9 @@ i {
 
 img {
     width: 30%;
-    margin-left: 180px;
     padding-top: 50px;
+    display: block;
+    margin: 0 auto;
 }
 
 h2 {
@@ -40,6 +41,12 @@ h2 {
 
 p {
     padding-top: 20px;
+}
+
+select {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 h1 {
