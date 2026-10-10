@@ -38,30 +38,9 @@ nav a {
 div {
     text-align: center;
     padding: 10px;
-    /* padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px; */
 }
-
-/* div img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px gray;
-
-}
-
-#images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-} */
 
 #image-box {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,9 +48,6 @@ div {
 }
 
 #image-box img {
-    /* display: block;
-    width: min(80%, 300px);
-    height: 300px; */
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -85,11 +61,46 @@ footer {
     margin-top: auto;
 }
 
+dialog {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+dialog img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: none;
+} 
+
+ .nav-link.show {
+    display: block;
+}
+
+#menu {
+    cursor: pointer;
+}
+
 /* @media screen and (max-width: 600px) {
     .nav-link {
         display: none;
     }
-} */
+ */
 
 @media screen and (min-width: 600px) {
     #menu {
@@ -113,16 +124,21 @@ footer {
         box-shadow: 0 2px 6px gray;
 
     }
+
+     /* .nav-link {
+        display: block;
+    } */
+
 }
 
 @media screen and (min-width: 900px) {
-    nav a {
-        display: none;
-    }
-
-    nav a {
+    nav .nav-link {
         display: inline-block;
     }
+
+    #menu {
+        display: none;
+    } 
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
@@ -144,5 +160,9 @@ footer {
 
     nav a {
         display: none;
+    }
+
+    dialog {
+        width: 60%;
     }
 }
