@@ -84,6 +84,23 @@ p {
     margin: 100px;
 }
 
+.book-section {
+    width: 100%;
+}
+
+.book {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.book h2 {
+    overflow-wrap: break-word;
+}
+
+.book img {
+    max-width: 100%;
+}
+
 @media (min-width: 600px) {
     nav {
         border-bottom: none;
