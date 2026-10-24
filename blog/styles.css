@@ -39,7 +39,7 @@ nav {
     border: 2px solid gold;
 }
 
-#list {
+.list {
     list-style: none;
     display: grid;
     justify-items: end;
@@ -47,15 +47,15 @@ nav {
     font-size: 25px;
 }
 
-#italic {
+.italic {
     font-style: italic;
 }
 
-#list li {
+.list li {
     padding-bottom: 10px;
 }
 
-#book {
+.book {
     display: grid;
     justify-items: center;
     margin: 20px;
@@ -66,7 +66,7 @@ h2 {
     color: #880E4F;   
 }
 
-#book img {
+.book img {
     width: 300px;
     height: auto;
 }
@@ -80,22 +80,30 @@ footer {
     padding: 10px 0;
 }
 
+p {
+    margin: 100px;
+}
+
 @media (min-width: 600px) {
     nav {
         border-bottom: none;
     }
 
-    #list {
+    .list {
         display: grid;
         justify-items: end;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #book {
+    .book {
         border-left: 2px solid gold;
     }
 
-    section {
+    main {
+        display: block;
+    }
+
+    .book-section {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
