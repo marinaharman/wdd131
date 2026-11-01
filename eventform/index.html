@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marina Harman">
+    <meta name="description" content="Event form">
+    <title>Event Ticket</title>
+    <link rel="stylesheet" href="eventform.css">
+    <link rel="icon" type="image/gif" href="icons8-favicon.gif">
+    <script src="eventform.js" defer></script>
+
+</head>
+<body>
+    <div id="form-box">
+        <form novalidate>
+            <h1 class="full-width">Event Ticket</h1>
+            <div class="field">
+                <label for="first">First Name</label><br>
+                <input type="text" id="first" name="first" required><br>
+            </div>
+            <div class="field">
+                <label for="last">Last Name</label> <br>
+                <input type="text" id="last" name="last" required><br>
+            </div>
+            <div class="full-width">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" required><br>
+            </div>
+            <div class="field">
+                <label for="type">Type</label><br>
+                <select id="type" name="type" required><br>
+                    <option value="">Choose One</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date" min="2026-10-31" max="2036-10-31" required><br>
+            </div>
+            <div id="extra-input" class="field full-width"></div>
+            <div class="full-width" id="submit">
+                <input type="submit" value="Create Ticket" required><br>
+            </div>
+            <div id="error"></div>
+            <div id="submit-info"></div>
+        </form>
+    </div>
+
+    <p>
+  <a href="https://icons8.com/icon/mxnsvF05U2Vw/internet">
+    Favicon
+  </a>
+  icon by
+  <a href="https://icons8.com/">
+    Icons8
+  </a>
+    </p>
+</body>
+</html>
