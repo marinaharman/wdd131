@@ -6,7 +6,7 @@ document.querySelector('#rollButton').addEventListener("click", event => {
     images.forEach(image => {
 
         if(isDieUnlocked(image)) {
-            image.src = "assets/die_rolling.gif";
+            image.src = "die_rolling.gif";
         }
     });
 
@@ -21,7 +21,7 @@ document.querySelector('#rollButton').addEventListener("click", event => {
         if(isDieUnlocked(image)) {
         // Math.random() returns a random number between 0-1
         const randomNumber = Math.floor(Math.random() * 6) + 1;
-        image.src = `assets/white_dice_${randomNumber}.gif`;
+        image.src = `white_dice_${randomNumber}.gif`;
         }
     });
     }, 700);
