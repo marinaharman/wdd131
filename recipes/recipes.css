@@ -104,6 +104,12 @@ footer > a {
     order: 2;
 }
 
+#search {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
 @media screen and (min-width: 700px) {
 
     .recipe {
@@ -162,5 +168,11 @@ footer > a {
     hr {
         margin-left: 200px;
         margin-right: 200px;
+    }
+
+    #search {
+        flex: 1;
+        border: none;
+        outline: none;
     }
 }
